@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head> 輸出 </head><p>
+        <body>
+            <input id="a" type="text"><p>
+            <input id="b" type="text"><p>
+            <nav>
+                <button type="button" onclick="sum()">+</button>
+                <button type="button" onclick="min()">-</button>
+                <button type="button" onclick="cro()">*</button>
+                <button type="button" onclick="dec()">/</button><p>
+            </nav>
+            <output id="c">
+            
+            <script>
+                function sum(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                   document.getElementById('c').value = a+b
+                }
+                function min(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                   document.getElementById('c').value = a-b
+                }
+                function cro(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                   document.getElementById('c').value = a*b
+                }
+                function dec(){
+                    var a = parseInt(document.getElementById('a').value);
+                    var b = parseInt(document.getElementById('b').value);
+                   document.getElementById('c').value = a/b
+                }
+            </script>
+        </body>
+</html>
